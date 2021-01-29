@@ -40,6 +40,7 @@ And start the animation with the duration in the JSON.
 
 
 ## Todo (I'm probably never gonna do lol)
+
 - [ ] Queue messages on the OBS page side 
 - [ ] Allow multiple animations tipe
 - [ ] Listen for events from twitch (like sub/whatever happens on twitch) (I __totally__ follow twitch streamsand I know the names) (probably via the APIs)
