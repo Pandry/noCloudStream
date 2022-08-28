@@ -1,0 +1,20 @@
+syntax = "proto3";
+package auther;
+
+option go_package = "auther/api/grpc";
+import "google/protobuf/timestamp.proto";
+
+service Auther {
+    rpc ValidateJWT(JWTToken) returns (JWTClaims);
+}
+
+message JWTToken {
+    string Token = 1;
+}
+
+message JWTClaims {
+    bool Valid = 1;
+    string Name = 2;
+    string Email = 3;
+    google.protobuf.Timestamp expiry = 4;
+}
